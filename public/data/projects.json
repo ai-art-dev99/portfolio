@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Project One",
+        "description": "Short description of what this project does and why it matters.",
+        "tags": [
+            "React",
+            "Tailwind",
+            "API"
+        ],
+        "image": "https://picsum.photos/seed/p1/800/500",
+        "links": {
+            "demo": "",
+            "repo": ""
+        }
+    },
+    {
+        "title": "Project Two",
+        "description": "Another highlight project with a catchy one-liner.",
+        "tags": [
+            "TypeScript",
+            "Vite"
+        ],
+        "image": "https://picsum.photos/seed/p2/800/500",
+        "links": {
+            "demo": "",
+            "repo": ""
+        }
+    }
+]

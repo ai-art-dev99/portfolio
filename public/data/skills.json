@@ -1,0 +1,30 @@
+[
+    {
+        "category": "Frontend",
+        "items": [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Vite",
+            "React Router"
+        ]
+    },
+    {
+        "category": "Backend",
+        "items": [
+            "Node.js",
+            "Express",
+            "REST",
+            "PostgreSQL"
+        ]
+    },
+    {
+        "category": "Tools",
+        "items": [
+            "Git",
+            "Docker",
+            "Jest",
+            "Playwright"
+        ]
+    }
+]
