@@ -23,7 +23,7 @@ export default function App() {
   }, [personLD]);
 
   return (
-    <div className="min-h-screen bg-white text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100">
+    <div className="min-h-screen text-zinc-900">
       <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-blue-600 text-white px-3 py-2 rounded">Skip to content</a>
       <Nav />
       <main id="content">

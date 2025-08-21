@@ -4,9 +4,7 @@
         "items": [
             "React",
             "TypeScript",
-            "Tailwind CSS",
-            "Vite",
-            "React Router"
+            "Tailwind CSS"
         ]
     },
     {
@@ -15,16 +13,39 @@
             "Node.js",
             "Express",
             "REST",
-            "PostgreSQL"
+            "Django"
         ]
     },
     {
         "category": "Tools",
         "items": [
             "Git",
-            "Docker",
-            "Jest",
-            "Playwright"
+            "Docker"
+        ]
+    },
+    {
+        "category": "AI",
+        "items": [
+            "Python",
+            "Pytorch",
+            "Tensorflow & Keras",
+            "Transformers"
+        ]
+    },
+    {
+        "category": "Programming Languages",
+        "items": [
+            "Python",
+            "C++",
+            "JavaScript"
+        ]
+    },
+    {
+        "category": "Database",
+        "items": [
+            "MongoDB",
+            "MSSQL",
+            "Neo4j"
         ]
     }
 ]

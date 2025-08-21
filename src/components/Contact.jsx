@@ -1,13 +1,32 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Mail } from "lucide-react";
 import { socials } from "../constants/constants";
 import Section from "./Section";
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
     const [status, setStatus] = useState(null); // "success" | "error"
+    const form = useRef()
 
-    // Replace with your Formspree form ID if you choose Formspree (no backend required)
-    const formAction = "https://formspree.io/f/your-form-id"; // <- put your real form id
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_hr4b5k1', 'template_iyf9n8s', form.current, {
+                publicKey: 'PzJoSTTw7u6qvUMP6',
+            })
+            .then(() => { setStatus("sending") })
+            .then(
+                () => {
+                    setStatus("success");
+                },
+                (error) => {
+                    setStatus("error");
+                },
+            );
+
+        e.target.reset();
+    };
 
     return (
         <Section id="contact" title="Contact">
@@ -16,13 +35,10 @@ export default function Contact() {
                     Send me a message using this form. It goes straight to my inbox.
                 </p>
                 <form
-                    action={formAction}
+                    ref={form}
                     method="POST"
                     className="space-y-4"
-                    onSubmit={(e) => {
-                        // Optimistic UI hint; Formspree will redirect to a success page unless you enable AJAX mode.
-                        setStatus("sending");
-                    }}
+                    onSubmit={sendEmail}
                 >
                     {/* Honeypot field */}
                     <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
@@ -39,7 +55,7 @@ export default function Contact() {
                         <label htmlFor="message" className="block text-sm font-medium dark:text-white">Message</label>
                         <textarea id="message" name="message" rows="5" required className="mt-1 w-full rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2"></textarea>
                     </div>
-                    <button type="submit" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700">
+                    <button type="submit" className="bg-blue-600 text-black hover:bg-blue-700 inline-flex items-center gap-2 px-4 py-2 rounded-xl">
                         <Mail size={18} /> Send
                     </button>
                     {status === "sending" && (

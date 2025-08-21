@@ -22,7 +22,7 @@ export default function Projects() {
                         <img src={p.image} alt="Project screenshot" className="w-full aspect-video object-cover" />
                         <div className="p-6">
                             <h3 className="text-xl font-semibold dark:text-white">{p.title}</h3>
-                            <p className="mt-2 text-zinc-700 dark:text-zinc-300">{p.description}</p>
+                            <p className="mt-2 text-zinc-700 dark:text-zinc-300 text-justify">{p.description}</p>
                             <ul className="mt-3 flex flex-wrap gap-2">
                                 {p.tags.map((t) => (
                                     <li key={t} className="px-2 py-1 text-xs rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200">{t}</li>

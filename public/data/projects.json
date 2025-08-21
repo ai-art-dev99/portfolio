@@ -1,29 +1,29 @@
 [
     {
-        "title": "Project One",
-        "description": "Short description of what this project does and why it matters.",
+        "title": "Radiology Report Generation",
+        "description": "Developed R2GenTransformer, a lightweight AI framework that generates clinically accurate chest X-ray reports by integrating Swin Transformer–based image analysis with lightweight LLMs, achieving high recall and fast training while running efficiently in low-resource environments.",
         "tags": [
-            "React",
-            "Tailwind",
-            "API"
+            "Large Language Models",
+            "AI in Healthcare"
         ],
-        "image": "https://picsum.photos/seed/p1/800/500",
+        "image": "/images/projects/0.png",
         "links": {
             "demo": "",
-            "repo": ""
+            "repo": "https://github.com/ai-art-dev99/master-project"
         }
     },
     {
-        "title": "Project Two",
-        "description": "Another highlight project with a catchy one-liner.",
+        "title": "Brain Tumor Classification",
+        "description": "Developed a hybrid deep and machine learning system for early brain tumor detection from MRI scans, combining EfficientNet-based feature extraction with classifiers like SVM, KNN, RF, and MLP. Achieved high diagnostic accuracy while significantly reducing computational cost compared to standalone deep learning models.",
         "tags": [
-            "TypeScript",
-            "Vite"
+            "Machine Learning",
+            "EfficientNet",
+            "AI in Healthcare"
         ],
-        "image": "https://picsum.photos/seed/p2/800/500",
+        "image": "/images/projects/Y194.jpg",
         "links": {
             "demo": "",
-            "repo": ""
+            "repo": "https://github.com/ai-art-dev99/brain-tumor-classification-hybrid-approach"
         }
     }
 ]
