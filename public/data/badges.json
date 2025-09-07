@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Data Engineering Essentials",
+        "image": "/images/badges/data-engineering-essentials.png"
+    },
+    {
+        "name": "Generative AI: Prompt Engineering",
+        "image": "/images/badges/generative-ai-prompt-engineering.png"
+    },
+    {
+        "name": "Machine Learning with Apache Spark",
+        "image": "/images/badges/machine-learning-with-apache-spark.png"
+    },
+    {
+        "name": "Data Engineering Capstone Project",
+        "image": "/images/badges/data-engineering-capstone-project.png"
+    },
+    {
+        "name": "Big Data with Spark and Hadoop Essentials",
+        "image": "/images/badges/big-data-with-spark-and-hadoop-essentials.png"
+    },
+    {
+        "name": "ETL and Data Pipelines with Shell, Airflow and Kafka",
+        "image": "/images/badges/etl-and-data-pipelines-with-shell-airflow-and-kafka.png"
+    }
+]

@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from "react";
 import './index.css'
 import { socials } from "./constants/constants";
-import { Nav, Hero, About, Skills, Projects, Contact, Footer } from "./components"
+import { Nav, Hero, About, Skills, Projects, Contact, Footer, Badges } from "./components"
 
 export default function App() {
   // Basic structured data for SEO
@@ -31,6 +31,7 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
+        <Badges />
         <Contact />
       </main>
       <Footer />

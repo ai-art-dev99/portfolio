@@ -15,6 +15,7 @@ export default function Nav() {
                             ["About", "about"],
                             ["Skills", "skills"],
                             ["Projects", "projects"],
+                            ["Badges", "badges"],
                             ["Contact", "contact"]
                         ].map(([label, id]) => (
                             <li key={id}>
